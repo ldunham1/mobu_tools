@@ -156,13 +156,13 @@ def create_tool(tool_name):
     tool.SetControl("button_layout", button_layout)
 
     tool.mirrorCharacterBtn = pyfbsdk.FBButton()
-    tool.mirrorCharacterBtn.Caption = 'Mirror Character'
+    tool.mirrorCharacterBtn.Caption = 'Character'
     tool.mirrorCharacterBtn.Hint = "Character: Mirror the current Character's pose."
     tool.mirrorCharacterBtn.OnClick.Add(action_mirror_character)
     button_layout.Add(tool.mirrorCharacterBtn, 50, space=5, height=20)
 
     tool.mirrorSelectionBtn = pyfbsdk.FBButton()
-    tool.mirrorSelectionBtn.Caption = 'Mirror Selection'
+    tool.mirrorSelectionBtn.Caption = 'Selection'
     tool.mirrorSelectionBtn.Hint = "Selection: Mirror the current Character's selected controls."
     tool.mirrorSelectionBtn.OnClick.Add(action_mirror_selection)
     button_layout.Add(tool.mirrorSelectionBtn, 50, space=5, height=20)
